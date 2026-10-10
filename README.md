@@ -23,8 +23,9 @@ with a mouse and keyboard.
 Plume is inspired by research published in *Science Advances* in September 2026:
 
 - **Helmbrecht et al. (2026).** A methane-making microbe from deep-sea vents,
-  *Methanothermococcus okinawensis*, grew in a lab recreation of Enceladus's ocean at up to pH 11,
-  living on hydrogen from simulated rock–water reactions.
+  *Methanothermococcus okinawensis*, grew in a lab recreation of Enceladus's seafloor at pH 9 to 11
+  (it had never grown above pH 8.5 before), living on hydrogen from simulated rock–water reactions.
+  The runs lasted 48 hours at 65 °C.
   [doi:10.1126/sciadv.aei0167](https://doi.org/10.1126/sciadv.aei0167)
 - **Postberg et al. (2026).** Cassini's dust analyser shows the plume's ice grains freeze slowly
   and separate by composition, so a single grain could carry a concentrated signal.
@@ -34,13 +35,26 @@ Plume is inspired by research published in *Science Advances* in September 2026:
   *The Guardian*, 25 September 2026.
 
 Neither paper is evidence of life on Enceladus. The game asks what it would take to detect it if
-it were there.
+it were there. It is also a thought experiment: planetary-protection rules exist precisely to stop
+Earth microbes from reaching these oceans.
 
 Under the hood, the ocean runs a real chemical reaction network: every reaction is checked for
 atom and charge balance, and microbes only grow where the reaction releases enough energy. The
 probe reads the same clues scientists have proposed for Enceladus: methane relative to hydrogen,
 missing hydrogen, carbon isotopes, methane versus ethane, and cells in ice grains. The in-game
 **Science notes** say what is modelled from real data and what is simplified for play.
+
+Further reading:
+- Waite et al. 2017, *Science*: Cassini finds hydrogen in the plume.
+  [doi:10.1126/science.aai8703](https://doi.org/10.1126/science.aai8703)
+- Glein et al. 2025, *Icarus*: phosphates point to a pH of about 10–11.
+  [doi:10.1016/j.icarus.2025.116717](https://doi.org/10.1016/j.icarus.2025.116717)
+- Affholder et al. 2021, *Nature Astronomy*: is Enceladus's methane biological?
+  [doi:10.1038/s41550-021-01372-6](https://doi.org/10.1038/s41550-021-01372-6)
+- Klenner et al. 2024, *Science Advances*: finding cell material in a single ice grain.
+  [doi:10.1126/sciadv.adl0849](https://doi.org/10.1126/sciadv.adl0849)
+- Green et al. 2021, *Nature*: a confidence scale for claims of life beyond Earth.
+  [doi:10.1038/s41586-021-03804-9](https://doi.org/10.1038/s41586-021-03804-9)
 
 ## What you'll do
 
