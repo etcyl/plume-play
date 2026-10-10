@@ -13,13 +13,18 @@
       #loading p { margin: 0 0 28px; color: #73c7d9; }
       #bar { width: min(420px, 70vw); height: 4px; background: #13232d; border-radius: 2px; overflow: hidden; }
       #fill { height: 100%; width: 0; background: linear-gradient(90deg, #4fd2e3, #ffcc6b); transition: width .2s; }
+      #credit { margin-top: 28px; color: #6f8a99; font-size: 12px; max-width: 80vw; text-align: center; }
+      #credit a { color: #9fd8e8; }
       #warning { position: fixed; left: 50%; top: 16px; transform: translateX(-50%); max-width: 80vw; z-index: 2; }
       #warning div { padding: 10px 14px; border-radius: 6px; margin-bottom: 6px; color: #111; }
     </style>
   </head>
   <body>
     <canvas id="game" tabindex="-1"></canvas>
-    <div id="loading"><h1>PLUME</h1><p>Seed life under the ice. Make it provable.</p><div id="bar"><div id="fill"></div></div></div>
+    <div id="loading"><h1>PLUME</h1><p>Seed life under the ice. Could a probe tell?</p><div id="bar"><div id="fill"></div></div>
+      <small id="credit">Inspired by <a href="https://doi.org/10.1126/sciadv.aei0167" target="_blank" rel="noopener">Helmbrecht et al.</a> and
+        <a href="https://doi.org/10.1126/sciadv.aee7256" target="_blank" rel="noopener">Postberg et al.</a>, <i>Science Advances</i> (2026) ·
+        <a href="https://www.theguardian.com/science/2026/sep/25/earth-microbes-survive-conditions-enceladus-saturn-moon-ocean-study" target="_blank" rel="noopener">The Guardian</a></small></div>
     <div id="warning"></div>
     <script>
       var canvas = document.querySelector("#game");
