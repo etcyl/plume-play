@@ -67,8 +67,8 @@ Further reading:
 - **Get detected:** push the probe's confidence to 70% by the flyby, then face the review panel.
 
 Four missions (Enceladus, Europa and two hypothetical oceans), plus a Sandbox Lab where you design
-your own metabolism, Survival Trials on a realistic Europa, and Plume Studio for building and
-sharing scenarios.
+your own metabolism, Survival Trials on a realistic Europa, Plume Studio for building and
+sharing scenarios, and the Reservoir Lab (below).
 
 | | |
 |---|---|
@@ -77,11 +77,45 @@ sharing scenarios.
 | ![How it works: the chain from vent to probe](docs/how-it-works.jpg) | ![The flyby mass spectrum](docs/spectrum.jpg) |
 | How it works (press G) | The flyby's mass spectrum |
 
+## New: the Reservoir Lab
+
+### ▶ [Open the Reservoir Lab directly](https://etcyl.github.io/plume-play/?lab)
+
+Can chemistry compute? The Reservoir Lab is a visual workflow, in the style of the Orange toolkit,
+for *reservoir computing*: a fixed, messy dynamical system does the hard work and only a simple
+readout is trained. Drop widgets on a canvas, link them, and everything re-runs as you edit.
+
+![The Reservoir Lab: an echo state network compiled to chemistry and then to DNA, with the DNA result in the inspector](docs/reservoir-lab.jpg)
+
+- **Go down the ladder.** Build a reservoir as a neural network, compile it to a chemical
+  reaction network, then to DNA strand displacement, and see what each step costs in accuracy,
+  molecules and time (DNA computes at about one input every half hour).
+- **Logic in DNA.** Write a Boolean circuit and run it as DNA seesaw gates, with every input
+  combination simulated as strand-displacement chemistry.
+- **Can an ocean compute?** Use a whole simulated ocean as the reservoir. Enceladus's vent plumes
+  sense the present perfectly but forget it within a day; a coastal dead zone's algae and bacteria
+  remember for about a week.
+- **Survive the review panel**, which asks five questions: negative numbers, running out of fuel,
+  leaky gates, molecular noise, and a readout that ran on a computer. Then try six compile-down
+  puzzles.
+
+| | |
+|---|---|
+| ![Two oceans as reservoirs, compared](docs/reservoir-ocean.jpg) | ![A half adder as DNA seesaw gates](docs/reservoir-logic.jpg) |
+| Two oceans as computers | A half adder in DNA seesaw gates |
+
+The Lab follows Peter Banda's roadmap from neural models to chemical reaction networks and DNA
+(PhD, Portland State, 2015), with the DNA compilers of Soloveichik, Seelig and Winfree (2010) and
+Qian and Winfree (2011). It's named in the spirit of Oger, the "organic" reservoir computing
+toolbox from Ghent (Verstraeten et al. 2012).
+
 ## Tips
 
 - New players get a short tutorial, and a **Next step** banner always says what to do and why.
 - Press **G** for a live diagram of the whole chain, from vent to probe.
 - Press **H** for help, **Esc** for the menu and settings.
+- Add `?lab` to the address to open straight into the Reservoir Lab (`?lab=1` loads the ocean
+  example). In the Lab, double-click a widget for a large view and press **F** to fit the canvas.
 - Slow? Press **F3** to see your frame rate and which graphics card the browser is using. Settings
   has graphics quality and automatic resolution.
 
